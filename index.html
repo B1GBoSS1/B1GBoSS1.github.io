@@ -309,12 +309,25 @@
                         </tr>
                     </tbody>
                 </table>
-                <div class="carousel">
-                    <div class ="slide"><img src="resources/f1_gallery/slide1.jpg" alt="Formula1_1"></div>
-                    <div class ="slide"><img src="resources/f1_gallery/slide2.jpg" alt="Formula1_2"></div>
-                    <div class ="slide"><img src="resources/f1_gallery/slide3.jpg" alt="Formula1_3"></div>
-                    <div class ="slide"><img src="resources/f1_gallery/slide4.jpg" alt="Formula1_4"></div>
-                    <div class ="slide"><img src="resources/f1_gallery/slide5.jpg" alt="Formula1_5"></div>
+                <div class="carousel-wrapper">
+                    <button class="arrow left" onclick="slide(-1)">←</button>
+                    <div class="carousel">
+                        <div class="slides">
+                        <div class="slide"><img src="resources/f1_gallery/slide1.jpg" alt="Formula1_1"></div>
+                        <div class="slide"><img src="resources/f1_gallery/slide2.jpg" alt="Formula1_2"></div>
+                        <div class="slide"><img src="resources/f1_gallery/slide3.jpg" alt="Formula1_3"></div>
+                        <div class="slide"><img src="resources/f1_gallery/slide4.jpg" alt="Formula1_4"></div>
+                        <div class="slide"><img src="resources/f1_gallery/slide5.jpg" alt="Formula1_5"></div>
+                        </div>
+                    </div>
+                    <button class="arrow right" onclick="slide(1)">→</button>
+                    <div class="dots">
+                        <button class="dot active" onclick="goTo(0)"></button>
+                        <button class="dot" onclick="goTo(1)"></button>
+                        <button class="dot" onclick="goTo(2)"></button>
+                        <button class="dot" onclick="goTo(3)"></button>
+                        <button class="dot" onclick="goTo(4)"></button>
+                    </div>
                 </div>
             </div>
         </section>
@@ -329,5 +342,6 @@
             <a href="#formula-1">Formula 1</a>
         </nav>
     </footer>
+    <script src="js/carousel.js"></script>
 </body>
 </html>
