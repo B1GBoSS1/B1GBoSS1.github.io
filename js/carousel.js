@@ -12,7 +12,7 @@ function updateCarousel() {
 }
 
 function slide(direction) {
-  current = (current + direction + total) % total;  /* wraps around */
+  current = (current + direction + total) % total;
   updateCarousel();
 }
 
