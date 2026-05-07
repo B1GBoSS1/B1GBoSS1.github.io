@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/png" href="resources/ico/favicon-32x32.png">
     <title>The GREATEST site to ever be</title>
-    <script src="js/nav_scroll.js"></script>
+    <script defer src="js/nav_scroll.js"></script>
+    <script defer src="js/carousel.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -311,7 +312,7 @@
                     </tbody>
                 </table>
                 <div class="carousel-wrapper">
-                    <button class="arrow left" onclick="slide(-1)">←</button>
+                    <button class="arrow left">←</button>
                     <div class="carousel">
                         <div class="slides">
                         <div class="slide"><img src="resources/f1_gallery/slide1.jpg" alt="Formula1_1"></div>
@@ -321,13 +322,13 @@
                         <div class="slide"><img src="resources/f1_gallery/slide5.jpg" alt="Formula1_5"></div>
                         </div>
                     </div>
-                    <button class="arrow right" onclick="slide(1)">→</button>
+                    <button class="arrow right">→</button>
                     <div class="dots">
-                        <button class="dot active" onclick="goTo(0)"></button>
-                        <button class="dot" onclick="goTo(1)"></button>
-                        <button class="dot" onclick="goTo(2)"></button>
-                        <button class="dot" onclick="goTo(3)"></button>
-                        <button class="dot" onclick="goTo(4)"></button>
+                        <button class="dot active"></button>
+                        <button class="dot"></button>
+                        <button class="dot"></button>
+                        <button class="dot"></button>
+                        <button class="dot"></button>
                     </div>
                 </div>
             </div>
@@ -343,6 +344,5 @@
             <a href="#formula-1">Formula 1</a>
         </nav>
     </footer>
-    <script src="js/carousel.js"></script>
 </body>
 </html>
